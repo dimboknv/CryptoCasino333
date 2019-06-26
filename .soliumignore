@@ -1,0 +1,7 @@
+node_modules
+contracts/SafeMath.sol
+coverage
+contracts/tests
+contracts/mocks
+contracts/build
+build
