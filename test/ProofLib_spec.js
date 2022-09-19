@@ -1,8 +1,8 @@
-const ProofLib = artifacts.require('./contracts/tests/TestProofLib.sol');
+// const ProofLib = artifacts.require('./contracts/tests/TestProofLib.sol');
 
-let instance;
+// let instance;
 let initContract = async function (owner) {
-  instance = await ProofLib.new({ from: owner });
+//   instance = await ProofLib.new({ from: owner });
 };
 
 contract('ProofLib', function ([owner]) {
