@@ -1,0 +1,35 @@
+name: build
+
+on: ["push", "pull_request"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:    
+      - uses: actions/checkout@v3
+
+      - name: use node 9.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '9.x'
+
+      - name: fix git timeout
+        run: git config --global url."https://".insteadOf git://
+
+      - name: install dependencies
+        run: npm install
+
+      - name: linting
+        run: |
+          npm run lint
+          npm run lint:sol
+
+      - name: coverage
+        run: |
+          npm run coverage
+          cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

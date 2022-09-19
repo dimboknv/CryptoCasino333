@@ -1,7 +1,7 @@
 # CryptoCasino333 Smart Contracts
 
 [![Coverage Status](https://coveralls.io/repos/github/dimboknv/CryptoCasino333/badge.svg?branch=master)](https://coveralls.io/github/dimboknv/CryptoCasino333/?branch=master)
-[![Build Status](https://travis-ci.org/dimboknv/CryptoCasino333.svg?branch=master)](https://travis-ci.org/dimboknv/CryptoCasino333)
+[![Build Status](https://github.com/dimboknv/CryptoCasino333/workflows/build/badge.svg)](https://github.com/dimboknv/CryptoCasino333/actions)
 
 ## Details
 
