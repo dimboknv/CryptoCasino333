@@ -21,7 +21,7 @@
     "smart",
     "contracts"
   ],
-  "author": "Dmitry <dmitry.nevmerzhitsky@gmail.com> <support@333eth.io> (https://333eth.io/)",
+  "author": "Dmitry <dimboknv@gmail.com> <support@333eth.io> (https://333eth.io/)",
   "license": "MIT",
   "devDependencies": {
     "babel-polyfill": "^6.23.0",
