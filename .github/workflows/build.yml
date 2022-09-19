@@ -25,9 +25,7 @@ jobs:
           npm run lint:sol
 
       - name: coverage
-        run: |
-          npm run coverage
-          cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+        run: npm run coverage
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
